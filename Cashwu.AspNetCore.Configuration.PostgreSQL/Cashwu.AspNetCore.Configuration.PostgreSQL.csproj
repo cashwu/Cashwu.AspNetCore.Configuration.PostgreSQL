@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <DebugType>full</DebugType>
+        <PackageId>Cashwu.AspNetCore.Configuration.PostgreSQL</PackageId>
+        <PackageProjectUrl>https://github.com/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageDescription>Asp.Net Core configuration from PostgreSQL</PackageDescription>
+        <Version>1.0.0</Version>
+        <Company>cashwu</Company>
+        <AssemblyName>Cashwu.AspNetCore.Configuration.PostgreSQL</AssemblyName>
+        <RootNamespace>Cashwu.AspNetCore.Configuration.PostgreSQL</RootNamespace>
+        <Authors>cashwu</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.1" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.0" />
+    </ItemGroup>
+
+</Project>
