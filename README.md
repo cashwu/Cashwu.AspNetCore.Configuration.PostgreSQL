@@ -15,8 +15,9 @@
 ## 註冊
 
 在 `Program` 的 `CreateHostBuilder` 註冊新的 Configuration，記得寫在 `ConfigureWebHostDefaults` 之前。可以傳入，下面兩個參數 
-    - ConnectionStringName：在 `appsettings` 裡面的 Database connection string 名稱，預設為 `DefaultConnection`
-    - PollingInterval：多久檢查一次 Database 看有沒有異動的資料，預設為 `1000 ms`
+
+  - ConnectionStringName：在 `appsettings` 裡面的 Database connection string 名稱，預設為 `DefaultConnection`
+  - PollingInterval：多久檢查一次 Database 看有沒有異動的資料，預設為 `1000 ms`
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
