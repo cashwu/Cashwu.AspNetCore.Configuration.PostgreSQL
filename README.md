@@ -2,6 +2,8 @@
 
 [![actions](https://github.com/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL/workflows/.NET%20Core/badge.svg?branch=master)](https://github.com/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL/actions)
 
+[![codecov](https://codecov.io/gh/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL/branch/master/graph/badge.svg)](https://codecov.io/gh/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL)
+
 ---
 
 [![Nuget](https://img.shields.io/badge/Nuget-Cashwu.AspNetCore.Configuration.PostgreSQL-blue.svg)](https://www.nuget.org/packages/Cashwu.AspNetCore.Configuration.PostgreSQL)
