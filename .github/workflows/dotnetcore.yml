@@ -19,7 +19,6 @@ jobs:
       run: |
         dotnet tool install -g coverlet.console
         dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../opencover.xml ./Cashwu.AspNetCore.Configuration.PostgreSQL.Tests/Cashwu.AspNetCore.Configuration.PostgreSQL.Tests.csproj
-        ls -al
     - name: upload coverage to codecov
       uses: codecov/codecov-action@v1.0.5
       with:
