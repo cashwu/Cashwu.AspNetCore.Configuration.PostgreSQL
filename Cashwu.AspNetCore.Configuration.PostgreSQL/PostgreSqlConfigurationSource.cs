@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
+[assembly: InternalsVisibleTo("Cashwu.AspNetCore.Configuration.PostgreSQL.Tests")]
 namespace Cashwu.AspNetCore.Configuration.PostgreSQL
 {
     internal class PostgreSqlConfigurationSource : IConfigurationSource

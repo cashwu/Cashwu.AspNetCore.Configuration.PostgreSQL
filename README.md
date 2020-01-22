@@ -8,6 +8,10 @@
 
 ---
 
+這個專案是參考 [EfConfiguration](https://github.com/cdwaddell/EfConfiguration) 這個專案修改而成
+
+--- 
+
 ## Database 初始化
 
 先在 Database 裡面執行 [init.sql](https://github.com/cashwu/Cashwu.AspNetCore.Configuration.PostgreSQL/blob/dev/script/init.sql)

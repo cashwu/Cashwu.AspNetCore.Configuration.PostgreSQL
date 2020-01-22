@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Cashwu.AspNetCore.Configuration.PostgreSQL.Tests")]
 
 namespace Cashwu.AspNetCore.Configuration.PostgreSQL
 {
@@ -8,11 +11,12 @@ namespace Cashwu.AspNetCore.Configuration.PostgreSQL
 
         public string Value { get; set; }
 
-#pragma warning disable 649
         private DateTime? _lastUpdated;
-#pragma warning restore 649
-        // ReSharper disable once ConvertToAutoProperty
 
-        public DateTime LastUpdated => _lastUpdated ?? DateTime.UtcNow;
+        public DateTime LastUpdated
+        {
+            internal set => _lastUpdated = value;
+            get => _lastUpdated ?? DateTime.UtcNow;
+        }
     }
 }

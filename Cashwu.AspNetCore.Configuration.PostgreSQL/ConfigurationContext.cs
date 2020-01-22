@@ -1,10 +1,10 @@
-﻿﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
- namespace Cashwu.AspNetCore.Configuration.PostgreSQL
+namespace Cashwu.AspNetCore.Configuration.PostgreSQL
 {
     public class ConfigurationContext : DbContext
     {
-        public ConfigurationContext(DbContextOptions options)
+        public ConfigurationContext(DbContextOptions<ConfigurationContext> options)
             : base(options)
         {
         }
