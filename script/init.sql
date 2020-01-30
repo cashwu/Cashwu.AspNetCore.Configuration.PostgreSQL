@@ -7,7 +7,7 @@ create table kv.configurationvalue
 		constraint configurationvalues_pk
 			primary key,
 	value varchar not null,
-	lastupdated timestamp default CURRENT_TIMESTAMP not null
+	lastupdated timestamptz default CURRENT_TIMESTAMP not null
 );
 
 create unique index configurationvalues_key_uindex
